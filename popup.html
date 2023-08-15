@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fontawesome/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="popup-container">
+      <h1>
+        Welcome to <span style="color: green">Tab Lock</span>
+        <i class="fa-solid fa-shield-dog"></i>
+      </h1>
+      <p>
+        If you have not created your password
+        <a id="passwordLink" href="#">click here</a>
+      </p>
+      <div id="passwordFields" style="display: none">
+        <input
+          type="password"
+          id="newPasswordInput"
+          placeholder="New Password"
+          required
+        /><br />
+        <input
+          type="password"
+          id="confirmPasswordInput"
+          placeholder="Confirm Password"
+          required
+        />
+        <button id="setPasswordButton">Set Password</button>
+      </div>
+      <p>Enter the password to unlock the pinned tab:</p>
+      <input type="password" id="passwordInput" placeholder="Password" />
+      <button id="openTabButton">Unlock Tab</button>
+      <button id="lockTabButton">Lock Tab</button>
+      <p id="statusMessage"></p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
